@@ -1,0 +1,38 @@
+site_name: LaTeX Lecture Note
+theme:
+  name: material
+  palette:
+    - scheme: default
+      # primary: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Japanese
+      link: /
+      lang: ja
+nav:
+  - はじめに: JP/index.md
+  - 文書設定:
+    - \documentclass: JP/doc_setting/document.md
+    - \usepackage: JP/doc_setting/package.md
+  - 松崎テンプレート: JP/mat_template.md
+  # - material.md
+  # - section1:
+      # section1-1:
+        # section1-1-1:
+          # section1-1-1.md
+      # section1-2:
+        # section1-2-1:
+          # section1-2-1.md
+  # - section2:
+    # - page2-1.md
+    # - page2-2.md
