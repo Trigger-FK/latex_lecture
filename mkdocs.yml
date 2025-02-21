@@ -24,6 +24,8 @@ nav:
   - 文書設定:
     - \documentclass: JP/doc_setting/document.md
     - \usepackage: JP/doc_setting/package.md
+  - 爆速コンパイル in Windows: 
+    - setting.json: JP/latex_with_wsl/settings.md
   - 松崎テンプレート: JP/mat_template.md
   # - material.md
   # - section1:

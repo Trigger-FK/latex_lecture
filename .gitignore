@@ -1,3 +1,6 @@
+## Remove virtual environment (python venv)
+venv
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
