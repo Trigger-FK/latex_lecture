@@ -1,9 +1,11 @@
 site_name: LaTeX Lecture Note
 theme:
   name: material
+  features:
+    - content.code.annotate
   palette:
     - scheme: default
-      # primary: blue grey
+      primary: blue grey
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -11,6 +13,14 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 extra:
   alternate:
     - name: English
@@ -25,16 +35,6 @@ nav:
     - \documentclass: JP/doc_setting/document.md
     - \usepackage: JP/doc_setting/package.md
   - 爆速コンパイル in Windows: 
-    - setting.json: JP/latex_with_wsl/settings.md
-  - 松崎テンプレート: JP/mat_template.md
-  # - material.md
-  # - section1:
-      # section1-1:
-        # section1-1-1:
-          # section1-1-1.md
-      # section1-2:
-        # section1-2-1:
-          # section1-2-1.md
-  # - section2:
-    # - page2-1.md
-    # - page2-2.md
+    - はじめに: JP/latex_with_wsl/introduction_wsl.md
+    - VSCodeの設定: JP/latex_with_wsl/vscode.md
+  - Package Template: JP/mat_template.md
